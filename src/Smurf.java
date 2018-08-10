@@ -20,7 +20,7 @@ public class Smurf {
 	}
 
 	public String getName() {
-		return "My name is " + name + " Smurf.";
+		return  "My name is " + name + " Smurf.";
 	}
 
 	public void eat() {
