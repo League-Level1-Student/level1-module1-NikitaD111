@@ -19,6 +19,18 @@ public class Smurf {
 
 	Smurf(String name) {
 		this.name = name;
+		if(name.equals("Papa")) {
+			this.color = "red";
+		}
+		else {
+			this.color = "white";
+		}
+		if(name.equals("Smurfette")) {
+			this.gender = "girl";
+		}
+		else {
+			this.gender = "boy";
+		}
 	}
 	public String getName() {
 		return "My name is " + name + " Smurf.";
