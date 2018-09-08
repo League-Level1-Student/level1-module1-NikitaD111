@@ -2,13 +2,17 @@
 public class Taco {
 	String Meat;
 	String Sauce;
-public static void main(String[] args) {
-	
-	
-}
+
 String getMeat(){
 	return Meat;
-		
-		
 	}
+String getSauce() {
+	return Sauce;
+}
+String setMeat(String meat) {
+	return Meat;
+}
+String setSauce(String meat) {
+	return Meat;
+}
 }
