@@ -9,16 +9,18 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 
 public class BinaryConverter implements MouseListener  {
-public static void main(String[] args) {
-	new BinaryConverter().binary();
-	
-}
-void binary() {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	JButton button = new JButton();
 	JLabel label = new JLabel();
 	JTextField answer = new JTextField(20);
+	
+public static void main(String[] args) {
+	new BinaryConverter().binary();
+	
+}
+void binary() {
+	
 	frame.setVisible(true);
 	frame.setSize(612, 112);
 	button.setText("convert");
@@ -31,6 +33,19 @@ void binary() {
 	frame.setDefaultCloseOperation(frame.EXIT_ON_CLOSE);
 
  }
+
+
+
+@Override
+public void mouseClicked(MouseEvent e) {
+	// TODO Auto-generated method stub
+	String variable;
+	String character;
+variable = answer.getText();
+character = convert(variable);
+System.out.println(variable);
+System.out.println(character);
+   }
 String convert(String input) {
           if(input.length() != 8){
                JOptionPane.showMessageDialog(null, "Enter 8 bits, silly!!!");
@@ -49,12 +64,9 @@ String convert(String input) {
                JOptionPane.showMessageDialog(null, "Enter a binary, silly!!!");
                return "-";
           }
-     }
-@Override
-public void mouseClicked(MouseEvent e) {
-	// TODO Auto-generated method stub
-
 }
+
+
 @Override
 public void mousePressed(MouseEvent e) {
 	// TODO Auto-generated method stub
